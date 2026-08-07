@@ -1,0 +1,74 @@
+/* * {
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    grid-template-rows: 3fr 2fr;
+    height: 100vh;
+    gap: 10px;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.grid>*{
+    border-radius: 10px;
+    border: 1px solid #000;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grade {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 40% 30% 30%;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    margin: 10px;
+
+
+    grid-template-areas:
+        "nav header header"
+        "nav produtos footer"
+        "servicos produtos aside";
+}
+
+#grade>* {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(5, 89, 100);
+}
+
+section#produtos {
+    grid-area: produtos;
+    background-color: rgb(0, 209, 209);
+}
+
+section#servicos {
+    grid-area: servicos;
+    background-color: rgb(218, 72, 4);
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(11, 59, 1);
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(148, 0, 136);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(172, 209, 6);
+}
