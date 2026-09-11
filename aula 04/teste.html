@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Simples — Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- Barra: cor muda com o tamanho da tela -->
+    <div class="w-full py-3 px-5 text-sm font-medium text-white
+              bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500">
+        Cor muda com o tamanho da tela
+    </div>
+
+    <!-- 3 itens responsivos -->
+    <div class="flex flex-col sm:flex-row gap-4 p-5">
+        <div class="flex-1 bg-gray-200 rounded px-4 py-4">Item 1</div>
+        <div class="flex-1 bg-gray-200 rounded px-4 py-4">Item 2</div>
+        <div class="flex-1 bg-gray-200 rounded px-4 py-4">Item 3</div>
+    </div>
+
+    <!-- Quadrado girado -->
+    <div class="w-16 h-16 bg-purple-500 rotate-12 ml-5 mt-6"></div>
+
+    <!-- Card -->
+    <div class="max-w-sm mx-auto mt-16 bg-white rounded-xl shadow-md p-6">
+        <h2 class="text-lg font-bold text-gray-900 mb-2">Título do Card</h2>
+        <p class="text-sm text-gray-500">
+            Esse é um exemplo de card animado e responsivo com Tailwind CSS
+        </p>
+    </div>
+
+    <!-- Botão animado com transformação -->
+    <div class="flex justify-center mt-10 pb-16">
+        <button class="px-6 py-3 rounded-lg bg-blue-500 text-white font-medium
+             transition-all duration-300 ease-in-out
+             hover:bg-blue-600 hover:scale-110 hover:-rotate-2
+             active:scale-95">
+            Clique aqui
+        </button>
+    </div>
+
+</body>
+</html>
